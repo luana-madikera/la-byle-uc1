@@ -28,6 +28,17 @@ body {
     background-size:     cover;
 }
 
+.img2 {
+    position: relative;
+    /* float: left; */
+    width:  250px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -126,17 +137,27 @@ ul.social-icons {
 
 /*Animations*/
 
-.animation1 {
-    animation: move 6s 1s forwards;
+.animationP {
+    animation: pcolor 5s infinite ease-in-out;
+}
 
+@keyframes pcolor {
+  15%  {color: #ffff;}
+  50%  {color: #AEF008;}
+  75%  {color: #6500FF;}
+ }
+
+
+.animation1 {
+    animation: move 6s 1s ease-in-out;
 }
 
 @keyframes move {
     from {
-        transform: translateX(-300px);
+        transform: translateX(-10px);
     }
 
     to {
-        transform: translateX(300px);
-    }
+        transform: translateX(100px);
 }
+
